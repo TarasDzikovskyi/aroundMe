@@ -1,0 +1,127 @@
+.navbar {
+  position: fixed;
+  height: 65px;
+  width: 100vw;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  z-index: 10;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+    color: white;
+
+    .left{
+
+      .mr5{
+        margin-right: 5px;
+      }
+
+      .logo{
+        font-size: 23px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+    .right {
+      display: flex;
+      //width: 850px;
+      //justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin-right: 200px;
+
+
+        li a {
+          text-decoration: none;
+          color: white;
+          margin-right: 50px;
+          font-weight: 500;
+          font-size: 18px;
+
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+
+        .icon{
+          margin-top: 5px;
+          font-size: 28px;
+          color: #FFFFFF;
+        }
+
+        .search_icon {
+
+          .custom-search {
+            margin-right: 7px;
+            right: 20px;
+            top: 1px;
+          }
+
+          #express-form-typeahead {
+            background-color: transparent;
+            background-image: url('../../img/search-icon.png');
+            background-position: 5px center;
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+            border: none;
+            cursor: pointer;
+            height: 37px;
+            margin: 3px 0;
+            padding: 0 0 0 34px;
+            position: relative;
+            -webkit-transition: width 400ms ease, background 400ms ease;
+            transition: width 400ms ease, background 400ms ease;
+            width: 0;
+          }
+
+          #express-form-typeahead:focus {
+            // background-color: #fff;
+            border-bottom: 2px solid white;
+            cursor: text;
+            outline: 0;
+            width: 220px;
+          }
+
+          .search-btn {
+            display: none;
+          }
+
+          input {
+            color: white;
+            font-size: 15px;
+
+          }
+
+          input[type="search"] {
+            -webkit-appearance: textfield;
+          }
+        }
+
+
+        .avatar {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          margin: 0 30px;
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,30 @@
+.review {
+  //width: 245px;
+  //height: 370px;
+  //margin: 0 8px 40px;
+
+  .circle{
+    font-size: 20px;
+    margin: 0 3px;
+  }
+
+
+
+    .star-rating {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .star-rating__max,
+    .star-rating__current {
+      position: absolute;
+      top: 0;
+    }
+
+    .star-rating__current {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
